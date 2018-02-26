@@ -1,0 +1,33 @@
+Connect four game for:
+2 players
+player vs ai or
+ai vs ai, which is pretty boring. 
+
+Running the game——————
+
+There are 3 main steps of running the game:
+
+Run ai.py in shell
+Define 2 players
+Start the game by calling connect_four function.
+
+
+
+Parameters for Player = Type of checker (must be X or O)
+Parameters for AIPlayer = Type of checker (must be X or O), Tiebreak, to tell it what to do in case it can’t decide. ( must be LEFT, RIGHT or RANDOM), Lookahead, tell the player how many moves it has to predict, aka depth of its reach tree. (Must be an integer >=0)
+
+
+Ex human vs ai:
+Run ai.py in shell
+
+>>> bob = Player(“O”)
+>>> pc = AIPayer(“X”, “RANDOM”, 3)
+>>> connect_four(bob, pc)
+
+
+————————————————
+AI player uses a BFS tree. It assumes its opponent does the best possible move for each of its own possible move. Check the code in ai.py for more details. 
+
+
+
+
